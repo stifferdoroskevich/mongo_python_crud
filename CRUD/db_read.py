@@ -1,5 +1,4 @@
 from connect import Connect
-from pprint import pprint
 
 
 client = Connect.get_connection()
@@ -20,14 +19,18 @@ def print_by_id(id):
     print(doc_basic_info)
 
 
-# ['Portugal', 'Brazil', 'United States', 'Turkey', 'Canada', 'Hong Kong', 'Spain', 'Australia', 'China']
-def print_by_country(country, limit):
+def places_by_country(country, limit):
     selected = col.find({'address.country':country})
     print(f'Printing first {limit} {country} places...')    
-    
+    countries = []
+    id = 1
     for place in selected[:limit]:
         country = place['address']['country']
         name = place['name']
         city = place['address']['market']
-        print(f'Country: {country} City: {city} Name: {name}')
+        msg = f'Country: {country} City: {city} Name: {name}'
+        countries.append({'id': id, 'country': country, 'city': city, 'name': name})
+        id += 1
+        
 
+    return countries
