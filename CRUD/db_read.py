@@ -19,6 +19,8 @@ def print_by_id(id):
     print(doc_basic_info)
 
 
+# Countries Availables:
+#['Portugal', 'Brazil', 'United States', 'Turkey', 'Canada', 'Hong Kong', 'Spain', 'Australia', 'China']
 def places_by_country(country, limit):
     selected = col.find({'address.country':country})
     print(f'Printing first {limit} {country} places...')    

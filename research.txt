@@ -11,3 +11,12 @@ https://kb.objectrocket.com/mongo-db/get-mongodb-database-and-collection-names-w
 Json format
 https://www.journaldev.com/33302/python-pretty-print-json
 
+Path manipulation
+https://courses.cs.washington.edu/courses/cse140/13wi/file-interaction.html
+
+
+CSV to mongo
+https://www.kite.com/python/examples/3250/csv-read-the-rows-of-a-csv-file-as-dictionaries-using-dictreader
+https://stackoverflow.com/questions/27416296/how-to-push-a-csv-data-to-mongodb-using-python/56241768
+https://www.kite.com/python/examples/3244/csv-retrieve-the-headers-of-a-csv-file 
+
