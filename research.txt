@@ -1,0 +1,13 @@
+https://developer.mongodb.com/community/forums/t/m220-connection-issue-trying-to-connect-with-mongo-shell-ssl-certificate-verify-failed/104064
+pip install dnspython pymongo certifi
+
+create db + inserting docs
+https://pymongo.readthedocs.io/en/stable/tutorial.html
+https://kb.objectrocket.com/mongo-db/how-to-insert-data-in-mongodb-using-python-683#verify+the+output
+
+List of databases
+https://kb.objectrocket.com/mongo-db/get-mongodb-database-and-collection-names-with-pymongo-and-python-644
+
+Json format
+https://www.journaldev.com/33302/python-pretty-print-json
+

@@ -1,4 +1,0 @@
-https://developer.mongodb.com/community/forums/t/m220-connection-issue-trying-to-connect-with-mongo-shell-ssl-certificate-verify-failed/104064
-pip install dnspython pymongo certifi
-python -m pip install --upgrade 'pymongo[srv]'
-

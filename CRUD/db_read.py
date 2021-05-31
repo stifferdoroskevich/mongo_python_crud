@@ -32,5 +32,22 @@ def places_by_country(country, limit):
         countries.append({'id': id, 'country': country, 'city': city, 'name': name})
         id += 1
         
-
     return countries
+
+
+def databases():
+    names = client.list_database_names()
+    db_names = []
+
+    # iterate over the list of database names
+    for db_num, db in enumerate(names):
+        db_names.append(db)
+        # print the database name
+        #print ("\nGetting collections for database:", db, "--", db_num)
+         
+        # use the list_collection_names() method to return collection names
+        #collection_names = client[db].list_collection_names()
+        #print ("list_collection_names() TYPE:", type(names))
+        #print ("The MongoDB database returned", len(collection_names), "collections.")
+    
+    return ('databases names: ', db_names)

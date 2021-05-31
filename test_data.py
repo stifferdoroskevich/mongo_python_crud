@@ -12,3 +12,17 @@ inventory_data = {"item": "canvas",
                   "tags": ["cotton"],
                   "size": {"h": 28, "w": 35.5, "uom": "cm"}}
 
+
+document1 = {
+        "name":"John",
+        "age":24,
+        "location":"New York"
+        }
+#second document
+document2 = {
+        "name":"Sam",
+        "age":21,
+        "location":"Chicago"
+        }
+
+

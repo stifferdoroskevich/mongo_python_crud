@@ -1,13 +1,14 @@
 import json
-from CRUD import db_read
+from CRUD import db_read, db_create
 
 
-#print_by_id(10006546)
-#print_by_country('Portugal', 5)
+# create database_sample + collection sample + inserts 2 documents
+db_create.create_db()
+print(db_read.databases())
 
-# ['Portugal', 'Brazil', 'United States', 'Turkey', 'Canada', 'Hong Kong', 'Spain', 'Australia', 'China']
-countries = db_read.places_by_country('Spain', 3)
+#Print List of places by country.
+#Countries Availables:
+#['Portugal', 'Brazil', 'United States', 'Turkey', 'Canada', 'Hong Kong', 'Spain', 'Australia', 'China']
+countries = db_read.places_by_country('Spain', 7)
 json_formatted_str = json.dumps(countries, indent=2)
 print(json_formatted_str)
-
-
